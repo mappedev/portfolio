@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@400;600&display=swap');
+
+:root {
+  --background-color: #171717;
+  --font-color: #fdfdfd;
+  --font-strong-color: #eeac30;
+  --font-error-color: #ff1e56;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mitr', sans-serif;
+  background: #fefefe;
+  margin: 0 auto;
+  overscroll-behavior: none;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-size: var(--font-size);
+  overflow-x: hidden;
+}
+
+ul, li, h1, h2, h3, p, button {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--font-strong-color);
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 17px;
+}

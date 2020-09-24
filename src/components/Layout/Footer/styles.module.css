@@ -1,0 +1,8 @@
+.Footer {
+  margin-top: 20px;
+}
+
+.Footer a {
+  color: var(--font-color);
+  margin-right: 15px;
+}
