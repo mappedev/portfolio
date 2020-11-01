@@ -1,0 +1,13 @@
+.Skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+  justify-items: center;
+  gap: 5px;
+}
+
+@media screen and (min-width: 568px) {
+  .Skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+  }
+}

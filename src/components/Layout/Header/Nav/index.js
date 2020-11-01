@@ -2,71 +2,72 @@ import React from "react";
 import { Link } from "@reach/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faGithubSquare,
-  faLinkedin,
-  faTwitterSquare,
-  faInstagramSquare,
-} from "@fortawesome/free-brands-svg-icons";
+  faHome,
+  faUser,
+  faTasks,
+  faAddressCard,
+} from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./styles.module.css";
 
 const Nav = ({ isActive, onClick }) => (
   <>
+    <div
+      className={
+        isActive
+          ? `${styles.overlay} ${styles.active} menu-fadeIn`
+          : styles.overlay
+      }
+    />
     <nav className={isActive ? `${styles.Nav} ${styles.active}` : styles.Nav}>
       <ul className={styles.list}>
         <li>
-          <Link to="/" onClick={onClick}>
-            <h2>INICIO</h2>
+          <Link
+            to="/"
+            className={
+              isActive ? `${styles.link} menu-fadeInRight` : styles.link
+            }
+            onClick={onClick}
+          >
+            INICIO
+            <FontAwesomeIcon className={styles.icons} icon={faHome} />
           </Link>
         </li>
         <li>
-          <Link to="/about" onClick={onClick}>
-            <h2>SOBRE MÍ</h2>
+          <Link
+            to="/about"
+            className={
+              isActive ? `${styles.link} menu-fadeInRight delay-1` : styles.link
+            }
+            onClick={onClick}
+          >
+            SOBRE MÍ
+            <FontAwesomeIcon className={styles.icons} icon={faUser} />
           </Link>
         </li>
         <li>
-          <Link to="/projects" onClick={onClick}>
-            <h2>PROYECTOS</h2>
+          <Link
+            to="/projects"
+            className={
+              isActive ? `${styles.link} menu-fadeInRight delay-2` : styles.link
+            }
+            onClick={onClick}
+          >
+            PROYECTOS
+            <FontAwesomeIcon className={styles.icons} icon={faTasks} />
           </Link>
         </li>
         <li>
-          <Link to="/contact" onClick={onClick}>
-            <h2>CONTACTO</h2>
+          <Link
+            to="/contact"
+            className={
+              isActive ? `${styles.link} menu-fadeInRight delay-3` : styles.link
+            }
+            onClick={onClick}
+          >
+            CONTACTO
+            <FontAwesomeIcon className={styles.icons} icon={faAddressCard} />
           </Link>
-        </li>
-        <li className={styles["social-links"]}>
-          <a
-            href="https://github.com/mappedev"
-            rel="noopener noreferrer"
-            target="_blank"
-            onClick={onClick}
-          >
-            <FontAwesomeIcon icon={faGithubSquare} size="2x" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/mario-jesus-peña-prado-89319a1a9"
-            rel="noopener noreferrer"
-            target="_blank"
-            onClick={onClick}
-          >
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />
-          </a>
-          <a
-            href="https://twitter.com/mappedev"
-            rel="noopener noreferrer"
-            target="_blank"
-            onClick={onClick}
-          >
-            <FontAwesomeIcon icon={faTwitterSquare} size="2x" />
-          </a>
-          <a
-            href="https://www.instagram.com/mappedev"
-            rel="noopener noreferrer"
-            target="_blank"
-            onClick={onClick}
-          >
-            <FontAwesomeIcon icon={faInstagramSquare} size="2x" />
-          </a>
         </li>
       </ul>
     </nav>

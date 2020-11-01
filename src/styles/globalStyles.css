@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+:root {
+  --background-color-top: rgba(79, 164, 244, 0.6);
+  --background-color-bottom: rgba(1, 16, 54, 1);
+  --background-color-button: rgba(61, 61, 61, 0.35);
+  --font-strong-hover-color: #cca266;
+  --font-family: 'Lato', sans-serif;
+  --font-color: #fff;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  overscroll-behavior: none;
+  background-color: var(--background-color-bottom);
+  color: var(--font-color);
+  overflow-x: hidden;
+}
+
+ul, li, h1, h2, h3, p, button, figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+a:hover {
+  color: var(--font-strong-hover-color);
+}

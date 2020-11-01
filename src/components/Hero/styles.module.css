@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Hero__image {
+  width: 200px;
+  margin-bottom: 25px;
+}
+
+.Hero__title {
+  font-family: 'Mr Dafoe', cursive;
+  color: var(--font-strong-hover-color);
+  font-weight: 400;
+  font-size: 3em;
+  margin-bottom: 25px;
+}
+
+.Hero__description {
+  font-size: 1.25em;
+  margin-bottom: 15px;
+}
+
+.Hero__link {
+  color: var(--font-color);
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.link__arrow-icon {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 480px) {
+
+  .Hero {
+    font-size: 17px;
+  }
+
+  .Hero__image {
+    width: 205px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Hero {
+    font-size: 18.5px;
+  }
+  .Hero__image {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Hero {
+    font-size: 20px;
+  }
+  
+  .Hero__image {
+    width: 230px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Hero {
+    font-size: 21.5px;
+  }
+  
+  .Hero__image {
+    width: 240px;
+  }
+}

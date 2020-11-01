@@ -5,7 +5,9 @@ import App from "./components/App";
 
 import * as serviceWorker from "./serviceWorker";
 
-import "./styles/GlobalStyles.css";
+import "./styles/normalize.css";
+import "./styles/globalStyles.css";
+import "./styles/animations.css";
 
 ReactDOM.render(
   <React.StrictMode>

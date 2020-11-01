@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 3;
+  z-index: 100;
 }
 
 .icon {
@@ -43,7 +43,7 @@
 .Button:hover span,
 .Button:active span,
 .Button.active span {
-  background-color: var(--font-strong-color);
+  background-color: var(--font-strong-hover-color);
 }
 
 /* By clicking... */

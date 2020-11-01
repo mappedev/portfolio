@@ -1,0 +1,70 @@
+.Skill-figure {
+  width: 95px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.15s linear;
+  transition-property: box-shadow, transform;
+  position: relative;
+}
+
+.Skill__process-text {
+  position: absolute;
+  top: 12px;
+  right: -34px;
+  background-color: #1d88ff;
+  padding: 0 30px;
+  transform: rotateZ(45deg);
+  font-size: 0.7em;
+  font-weight: 700;
+}
+
+.Skill__logo {
+  width: 35px;
+  height: 35px;
+  margin: 10px 0 5px;
+}
+
+.Skill__logo-description {
+  margin-bottom: 5px;
+  transition: color 0.15s linear;
+}
+
+.Skill-figure:hover .Skill__logo-description {
+  color: var(--font-strong-hover-color);
+}
+
+.Skill-figure:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .Skill__process-text {
+    top: 12px;
+    right: -35px;
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .Skill-figure {
+    width: 160px;
+    height: 150px;
+  }
+
+  .Skill__process-text {
+    top: 20px;
+    right: -30px;
+    font-size: 0.85em;
+  }
+
+  .Skill__logo {
+    width: 60px;
+    height: 60px;
+  }
+}

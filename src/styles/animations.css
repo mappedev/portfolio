@@ -1,0 +1,58 @@
+.fadeIn {
+  animation: fadeIn 0.7s ease-in backwards;
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.7s ease-in backwards;
+}
+
+.menu-fadeInRight {
+  animation: fadeInRight 0.25s ease-in-out forwards;
+}
+
+.menu-fadeIn {
+  animation: fadeIn 0.25s ease-in-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 100ms;
+}
+
+.delay-2 {
+  animation-delay: 200ms;
+}
+
+.delay-3 {
+  animation-delay: 300ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,11 +1,39 @@
-.wrapper {
-  margin: 100px 65px 50px;
-  padding: 0 10px;
-  border: 1px solid red;
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to bottom, var(--background-color-top), transparent);
+  z-index: -100;
 }
 
 .menu {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.wrapper {
+  padding-top: 100px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-content: center;
+  padding: 100px 10px 0;
+}
+
+.section {
+  align-self: center;
+  max-width: 850px;
+}
+
+.footer-container {
+  align-self: end;
+}
+
+@media screen and (min-width: 568px) {
+  .wrapper {
+    padding: 100px 20px 0;
+  }
 }
