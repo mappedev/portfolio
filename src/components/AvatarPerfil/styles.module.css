@@ -1,0 +1,57 @@
+.Avatar-perfil {
+  display: block;
+}
+
+.Avatar-perfil__image {
+  width: 200px;
+  margin-bottom: 25px;
+}
+
+.Avatar-perfil__title {
+  font-family: 'Mr Dafoe', cursive;
+  color: var(--font-strong-hover-color);
+  font-weight: 400;
+  font-size: 3em;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 480px) {
+
+  .Avatar-perfil {
+    font-size: 17px;
+  }
+
+  .Avatar-perfil__image {
+    width: 205px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Avatar-perfil {
+    font-size: 18.5px;
+  }
+
+  .Avatar-perfil__image {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Avatar-perfil {
+    font-size: 20px;
+  }
+  
+  .Avatar-perfil__image {
+    width: 230px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Avatar-perfil {
+    font-size: 21.5px;
+  }
+  
+  .Avatar-perfil__image {
+    width: 240px;
+  }
+}

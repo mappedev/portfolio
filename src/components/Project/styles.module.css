@@ -1,23 +1,28 @@
 .Project {
-  overflow: hidden;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  height: 150px;
   border-radius: 12px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: box-shadow 0.15s linear;
 }
 
 .Project:hover {
   box-shadow: 0 0 25px rgba(0, 0, 0, 1);
 }
 
-.Project__background {
-  height: 150px;
-  background-size: cover;
-  background-position: center;
+.Project__wrapper {
+  height: 100%;
   transition: transform 0.15s linear;
-  position: relative;
+  position: relative
 }
 
-.Project__background:hover {
+.Project:hover .Project__wrapper {
   transform: scale(1.05);
+}
+
+.Project__image {
+  width: 100%;
+  height: 100%;
 }
 
 .Project__new-text {
@@ -32,9 +37,12 @@
 }
 
 .Project__description {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,6 +50,7 @@
   opacity: 0;
   transform: translateY(100%);
   backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
   transition: 0.15s linear;
   transition-property: opacity, transform;
 }
@@ -51,11 +60,11 @@
   transform: translateY(0);
 }
 
-.Project__tools { 
+.description__tools { 
   font-weight: 700;
 }
 
-.Project__link {
+.description__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -67,13 +76,13 @@
   background-color: var(--background-color-button);
 }
 
-.Project__link:hover {
-  color: white;
-  background-color: var(--font-strong-hover-color);
+.description__link:first-child {
+  margin-right: 20px;
 }
 
-.Project__link:last-child {
-  margin-left: 20px;
+.description__link:hover {
+  color: white;
+  background-color: var(--font-strong-hover-color);
 }
 
 .link__icon {
@@ -81,7 +90,7 @@
 }
 
 @media screen and (min-width: 480px) {
-  .Project__background {
+  .Project {
     height: 230px;
   }
 
@@ -90,23 +99,23 @@
     font-size: 1em;
   }
 
-  .Project__link {
+  .description__link {
     width: 130px;
   }
 }
 
 @media screen and (min-width: 568px) {
-  .Project__background {
+  .Project {
     height: 240px;
   }
 
-  .Project__link {
+  .description__link {
     width: 135px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .Project__background {
+  .Project {
     height: 300px;
   }
 
@@ -116,23 +125,23 @@
     font-size: 1.1em;
   }
 
-  .Project__link {
+  .description__link {
     width: 145px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .Project__background {
+  .Project {
     height: 320px;
   }
 
-  .Project__link {
+  .description__link {
     width: 155px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .Project__link {
+  .description__link {
     width: 165px;
   }
 }

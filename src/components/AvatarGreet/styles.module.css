@@ -1,0 +1,112 @@
+.Avatar-greet {
+  position: relative;
+  z-index: -1;
+  width: 300px;
+  margin: 0 auto 30px;
+}
+
+.Avatar-greet__image {
+  width: 175px;
+}
+
+.Avatar-greet__text {
+  background-color: var(--background-color-bottom);
+  border-radius: 45%;
+  width: 175px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.Avatar-greet__text::after {
+  content: "";
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid var(--background-color-bottom);
+  border-left: 10px solid var(--background-color-bottom);
+  border-right: 10px solid transparent;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .Avatar-greet {
+    font-size: 17px;
+    width: 320px;
+  }
+  
+  .Avatar-greet__image, .Avatar-greet__text {
+    width: 185px;
+  }
+
+  .Avatar-greet__text::after {
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid var(--background-color-bottom);
+    border-left: 11px solid var(--background-color-bottom);
+    border-right: 11px solid transparent;
+    left: 11px;
+    bottom: 9px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Avatar-greet {
+    font-size: 18.5px;
+    width: 350px;
+  }
+  
+  .Avatar-greet__image, .Avatar-greet__text {
+    width: 205px;
+  }
+
+  .Avatar-greet__text::after {
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid var(--background-color-bottom);
+    border-left: 12px solid var(--background-color-bottom);
+    border-right: 12px solid transparent;
+    left: 14px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Avatar-greet {
+    font-size: 20px;
+    width: 380px;
+  }
+  
+  .Avatar-greet__image, .Avatar-greet__text {
+    width: 225px;
+  }
+
+  .Avatar-greet__text::after {
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid var(--background-color-bottom);
+    border-left: 13px solid var(--background-color-bottom);
+    border-right: 13px solid transparent;
+    left: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Avatar-greet {
+    font-size: 21.5px;
+    width: 425px;
+  }
+  
+  .Avatar-greet__image, .Avatar-greet__text {
+    width: 250px;
+  }
+
+  .Avatar-greet__text::after {
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid var(--background-color-bottom);
+    border-left: 14px solid var(--background-color-bottom);
+    border-right: 14px solid transparent;
+    left: 16px;
+  }
+}

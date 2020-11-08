@@ -3,13 +3,15 @@ import { Link } from "@reach/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
+import AvatarPerfil from "../AvatarPerfil";
+
 import styles from "./styles.module.css";
+
 import avatar from "../../assets/avatar.png";
 
 const Hero = () => (
   <div className={`${styles.Hero} fadeIn`}>
-    <img className={styles["Hero__image"]} src={avatar} alt="Perfil" />
-    <h1 className={styles["Hero__title"]}>Mario Peña</h1>
+    <AvatarPerfil src={avatar} alt="Avatar perfil" />
     <span className={styles["Hero__description"]}>
       Hola, me apasiona el gran mundo web, especialmente el desarrollo frontend.
     </span>

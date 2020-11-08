@@ -1,6 +1,7 @@
 import React from "react";
 
 import ListOfSKills from "../../components/ListOfSkills";
+import AvatarGreet from "../../components/AvatarGreet";
 
 import styles from "./styles.module.css";
 
@@ -12,16 +13,7 @@ const AboutMe = () => (
     <div className={`${styles.AboutMe} fadeIn`}>
       <h3 className={styles["AboutMe__title"]}>Sobre mí</h3>
       <h1 className={styles["AboutMe__name"]}>Mario Peña</h1>
-      <div className={styles["AboutMe__avatar-wrapper"]}>
-        <img
-          src={avatarGreet}
-          alt="Avatar saludando"
-          className={styles["AboutMe__avatar"]}
-        />
-        <p className={styles["AboutMe__greet"]}>
-          Hola, me llamo Mario Peña, gracias por visitar mi sitio web.
-        </p>
-      </div>
+      <AvatarGreet src={avatarGreet} alt="Avatar saludando" />
       <section className={styles["AboutMe__section"]}>
         <h3 className={styles["AboutMe__title"]}>¿Quién soy?</h3>
         <p className={styles["AboutMe__paragraph"]}>

@@ -1,3 +1,7 @@
+.overflowY--hidden {
+  overflow-y: hidden;
+}
+
 .background {
   position: absolute;
   top: 0;

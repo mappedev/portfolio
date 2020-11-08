@@ -48,9 +48,11 @@ const PROJECTS = [
   },
 ];
 
+const PROJECTS_REVERSE = PROJECTS.reverse();
+
 const ListOfProject = () => (
   <ul className={styles["Projects-grid"]}>
-    {PROJECTS.reverse().map((project, index) => (
+    {PROJECTS_REVERSE.map((project, index) => (
       <li key={index}>
         <Project
           src={project.src}

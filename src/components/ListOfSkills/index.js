@@ -57,21 +57,19 @@ const SKILLS = [
   },
 ];
 
-const ListOfSkills = () => {
-  return (
-    <ul className={styles["Skills-grid"]}>
-      {SKILLS.map((skill, index) => (
-        <li key={index}>
-          <Skill
-            src={skill.src}
-            alt={skill.alt}
-            title={skill.title}
-            inProcess={skill.inProcess}
-          />
-        </li>
-      ))}
-    </ul>
-  );
-};
+const ListOfSkills = () => (
+  <ul className={styles["Skills-grid"]}>
+    {SKILLS.map((skill, index) => (
+      <li key={index}>
+        <Skill
+          src={skill.src}
+          alt={skill.alt}
+          title={skill.title}
+          inProcess={skill.inProcess}
+        />
+      </li>
+    ))}
+  </ul>
+);
 
 export default ListOfSkills;

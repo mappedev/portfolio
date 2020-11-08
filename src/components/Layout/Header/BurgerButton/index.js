@@ -7,7 +7,7 @@ const BurgerButton = ({ isActive, onClick }) => (
     className={isActive ? `${styles.Button} ${styles.active}` : styles.Button}
     onClick={onClick}
   >
-    <div className={styles.icon}>
+    <div className={styles["Button__icon"]}>
       <span></span>
       <span></span>
       <span></span>

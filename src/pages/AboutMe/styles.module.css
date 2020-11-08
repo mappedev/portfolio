@@ -7,42 +7,6 @@
   margin-bottom: 30px;
 }
 
-.AboutMe__avatar-wrapper {
-  position: relative;
-  z-index: -1;
-  width: 300px;
-  margin: 0 auto 30px;
-}
-
-.AboutMe__avatar {
-  width: 175px;
-}
-
-.AboutMe__greet {
-  background-color: var(--background-color-bottom);
-  border-radius: 45%;
-  width: 175px;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: center;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-}
-
-.AboutMe__greet::after {
-  content: "";
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid var(--background-color-bottom);
-  border-left: 10px solid var(--background-color-bottom);
-  border-right: 10px solid transparent;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-
 .AboutMe__paragraph {
   margin-bottom: 30px;
   line-height: 1.4;
@@ -74,27 +38,6 @@
     font-size: 17px;
   }
 
-  .AboutMe__avatar-wrapper {
-    width: 320px;
-  }
-  
-  .AboutMe__avatar {
-    width: 185px;
-  }
-
-  .AboutMe__greet {
-    width: 185px;
-  }
-
-  .AboutMe__greet::after {
-    border-top: 11px solid transparent;
-    border-bottom: 11px solid var(--background-color-bottom);
-    border-left: 11px solid var(--background-color-bottom);
-    border-right: 11px solid transparent;
-    left: 11px;
-    bottom: 9px;
-  }
-
   .paragraph__img {
     width: 17px;
   }
@@ -105,26 +48,6 @@
     font-size: 18.5px;
   }
   
-  .AboutMe__avatar-wrapper {
-    width: 350px;
-  }
-  
-  .AboutMe__avatar {
-    width: 205px;
-  }
-
-  .AboutMe__greet {
-    width: 205px;
-  }
-
-  .AboutMe__greet::after {
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid var(--background-color-bottom);
-    border-left: 12px solid var(--background-color-bottom);
-    border-right: 12px solid transparent;
-    left: 14px;
-  }
-
   .paragraph__img {
     width: 18.5px;
   }
@@ -133,26 +56,6 @@
 @media screen and (min-width: 992px) {
   .AboutMe {
     font-size: 20px;
-  }
-  
-  .AboutMe__avatar-wrapper {
-    width: 380px;
-  }
-  
-  .AboutMe__avatar {
-    width: 225px;
-  }
-
-  .AboutMe__greet {
-    width: 225px;
-  }
-
-  .AboutMe__greet::after {
-    border-top: 13px solid transparent;
-    border-bottom: 13px solid var(--background-color-bottom);
-    border-left: 13px solid var(--background-color-bottom);
-    border-right: 13px solid transparent;
-    left: 15px;
   }
 
   .paragraph__img {
@@ -165,26 +68,6 @@
     font-size: 21.5px;
   }
   
-  .AboutMe__avatar-wrapper {
-    width: 425px;
-  }
-  
-  .AboutMe__avatar {
-    width: 250px;
-  }
-  
-  .AboutMe__greet {
-    width: 250px;
-  }
-
-  .AboutMe__greet::after {
-    border-top: 14px solid transparent;
-    border-bottom: 14px solid var(--background-color-bottom);
-    border-left: 14px solid var(--background-color-bottom);
-    border-right: 14px solid transparent;
-    left: 16px;
-  }
-
   .paragraph__img {
     width: 21.5px;
   }

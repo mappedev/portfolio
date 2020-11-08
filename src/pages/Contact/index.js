@@ -11,12 +11,7 @@ import styles from "./styles.module.css";
 
 const Contact = () => (
   <div className={`${styles.Contact} fadeIn`}>
-    <h1 className={styles["Contact__title"]}>
-      {/* <span role="img" aria-label="phone">
-        &#128222;
-      </span>{" "} */}
-      ¡CONTÁCTAME!
-    </h1>
+    <h1 className={styles["Contact__title"]}>¡CONTÁCTAME!</h1>
     <p className={styles["Contact__paragraph"]}>
       <strong>
         Si tienes una oferta de trabajo, una propuesta de proyecto, deseas que

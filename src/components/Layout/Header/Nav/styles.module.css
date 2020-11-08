@@ -1,11 +1,12 @@
 .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   display: none;
   z-index: 98;
 }
@@ -30,13 +31,13 @@
   display: flex;
 }
 
-.list {
+.Nav__list {
   margin-top: 65px;
   padding-right: 17.5px;
   overflow-x: hidden;
 }
 
-.link {
+.Nav__link {
   color: #a8a9b4;
   width: inherit;
   height: inherit;
@@ -51,15 +52,15 @@
   font-size: 1.5em;
 }
 
-.link:hover {
+.Nav__link:hover, .Nav__link[aria-current] {
   color: var(--font-color);
 }
 
-.link:hover .icons {
+.Nav__link:hover .link__icons, .Nav__link[aria-current] .link__icons {
   color: var(--font-strong-hover-color);
 }
 
-.icons {
+.link__icons {
   font-size: 1.1em;
   margin-left: 10px;
 }
@@ -73,23 +74,23 @@
     flex-direction: row;
   }
   
-  .list {
+  .Nav__list {
     display: flex;
     margin-top: 0;
     padding-right: 0;
   }
   
-  .link {
+  .Nav__link {
     padding: 10px;
     transform: none;
     opacity: 1;
   }
 
-  .link:hover {
+  .Nav__link:hover {
     color: var(--font-strong-hover-color);
   }
 
-  .icons {
+  .link__icons {
     display: none;
   }
 }

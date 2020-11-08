@@ -10,7 +10,7 @@ import useScrollMenu from "../../hooks/useScrollMenu";
 
 import styles from "./styles.module.css";
 
-const Layout = ({ children }) => {
+const LayoutComponent = ({ children }) => {
   const element = useRef(null);
   const [isMenuOpen, setMenu] = useState(false);
   const scrollUp = useScrollMenu();
@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   const isVisible = isMenuOpen ? true : scrollUp;
 
   return (
-    <main>
+    <main className={isMenuOpen ? styles["overflowY--hidden"] : ""}>
       <div className={styles.background} />
       <Header isVisible={isVisible}>
         <Logo />
@@ -39,5 +39,7 @@ const Layout = ({ children }) => {
     </main>
   );
 };
+
+const Layout = React.memo(LayoutComponent);
 
 export default Layout;

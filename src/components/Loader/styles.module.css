@@ -1,0 +1,48 @@
+.Loader {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.Loader--small {
+  margin: 25px auto;
+}
+
+.Loader--big {
+  margin: 100px auto;
+}
+
+.Loader__rect {
+  background-color: var(--font-color);
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  animation: stretch 1.2s infinite ease-in-out;
+  margin: 0 1px;
+}
+
+.Loader__rect--delay-2 {
+  animation-delay: -1.1s;
+}
+
+.Loader__rect--delay-3 {
+  animation-delay: -1s;
+}
+
+.Loader__rect--delay-4 {
+  animation-delay: -0.9s;
+}
+
+.Loader__rect--delay-5 {
+  animation-delay: -0.8s;
+}
+
+@keyframes stretch {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+  }  
+  20% { 
+    transform: scaleY(1.0);
+  }
+}
