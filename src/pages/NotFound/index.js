@@ -1,5 +1,9 @@
 import React from "react";
 
-const NotFound = () => <p>Not found 404</p>;
+import Avatar404 from "../../components/Avatar404";
+
+import avatar404 from "../../assets/avatar404.png";
+
+const NotFound = ({ src }) => <Avatar404 src={avatar404} />;
 
 export default NotFound;

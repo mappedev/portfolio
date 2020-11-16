@@ -2,15 +2,3 @@
   width: 65px;
   height: 65px;
 }
-
-.Logo__link {
-  width: inherit;
-  height: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--font-color);
-  letter-spacing: -9.2px;
-  font-weight: 700;
-  font-size: 2em;
-}
